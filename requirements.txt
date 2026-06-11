@@ -14,3 +14,4 @@ transformers>=4.35.0
 tokenizers>=0.13.3
 python-dotenv
 torchvision
+streamlit-lottie
