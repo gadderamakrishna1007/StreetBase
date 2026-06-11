@@ -19,6 +19,8 @@ GOOGLE_CLIENT_SECRET = get_secret("GOOGLE_CLIENT_SECRET")
 REDIRECT_URI = get_secret("REDIRECT_URI", "http://localhost:8501")
 FIREBASE_API_KEY = get_secret("FIREBASE_API_KEY")
 
+st.write("CLIENT ID:", GOOGLE_CLIENT_ID)
+
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Firebase Auth App", page_icon="🔥", layout="centered")
 
