@@ -37,14 +37,13 @@ if "theme_mode" not in st.session_state:
 # Firebase config
 # ------------------------------
 firebaseConfig = {
-  "apiKey": FIREBASE_API_KEY,
-  "authDomain": "login-10cee.firebaseapp.com",
-  "databaseURL": "https://login-10cee-default-rtdb.firebaseio.com",
-  "projectId": "login-10cee",
-  "storageBucket": "login-10cee.appspot.com",
-  "messagingSenderId": "332483422044",
-  "appId": "1:332483422044:web:22ecce612880ab53a54399",
-  "measurementId": "G-044W8QJB1Q"
+    "apiKey": "AIzaSyDMkNrzzysA6jK-rtsxGDssTl7QI0hAu6s",
+    "authDomain": "streetbase-eeec7.firebaseapp.com",
+    "databaseURL": "https://YOUR_DATABASE_URL",
+    "projectId": "streetbase-eeec7",
+    "storageBucket": "streetbase-eeec7.firebasestorage.app",
+    "messagingSenderId": "389035323536",
+    "appId": "1:389035323536:web:2c3e3da114d736f0bfa815"
 }
 
 try:
