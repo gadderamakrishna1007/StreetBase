@@ -39,7 +39,7 @@ if "theme_mode" not in st.session_state:
 firebaseConfig = {
     "apiKey": "AIzaSyDMkNrzzysA6jK-rtsxGDssTl7QI0hAu6s",
     "authDomain": "streetbase-eeec7.firebaseapp.com",
-    "databaseURL": "https://YOUR_DATABASE_URL",
+    "databaseURL": "https://streetbase-eeec7-default-rtdb.asia-southeast1.firebasedatabase.app/",
     "projectId": "streetbase-eeec7",
     "storageBucket": "streetbase-eeec7.firebasestorage.app",
     "messagingSenderId": "389035323536",
