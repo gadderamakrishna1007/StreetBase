@@ -1,0 +1,15 @@
+/* Make the columns block that comes right after our anchor look like a card */
+#hero-card-anchor + div[data-testid="stHorizontalBlock"]{
+  background:#FFFFFF;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  padding:2rem;                  /* inner spacing around columns */
+  margin-bottom:2rem;            /* space below the card */
+  border:1px solid #E5E7EB;      /* subtle border */
+}
+
+/* Optional: tighten inner column gutters a touch */
+#hero-card-anchor + div[data-testid="stHorizontalBlock"] > div{
+  padding-left:.25rem;
+  padding-right:.25rem;
+}
