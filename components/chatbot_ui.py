@@ -38,11 +38,15 @@ def chatbot_popup():
         st.session_state.chat_history.append(("user", user_query))
 
         # Get bot reply
-        reply = answer_query(
-            user_query,
-            st.session_state.chunks,
-            st.session_state.embeddings,
-        )
+        try:
+            reply = answer_query(
+                user_query,
+                st.session_state.chunks,
+                st.session_state.embeddings,
+            )
+       except Exception as e:
+           st.error(f"ERROR: {str(e)}")
+           st.stop()
 
         st.chat_message("assistant").markdown(reply)
         st.session_state.chat_history.append(("assistant", reply))
