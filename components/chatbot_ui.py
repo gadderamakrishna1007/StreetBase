@@ -44,7 +44,7 @@ def chatbot_popup():
                 st.session_state.chunks,
                 st.session_state.embeddings,
             )
-       except Exception as e:
+        except Exception as e:
            st.error(f"ERROR: {str(e)}")
            st.stop()
 
