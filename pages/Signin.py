@@ -88,8 +88,9 @@ def build_google_url():
         "scope": "openid email profile",
         "prompt": "consent"
     }
-    return "https://accounts.google.com/o/oauth2/v2/auth?" + urlencode(params)
 
+    return "https://accounts.google.com/o/oauth2/v2/auth?" + urlencode(params)
+    
 def handle_google_callback():
     params = st.query_params
     if "code" not in params:
@@ -196,8 +197,9 @@ def load_signin_page():
                         st.error(map_firebase_error(str(e)))
 
             st.markdown("### 🔐 Or login with Google")
-            st.link_button("Continue with Google", build_google_url())
-
+            google_url = build_google_url()
+            st.write("GOOGLE URL =", google_url)
+            st.link_button("Continue with Google", google_url)
         # -------- REGISTER TAB --------
         with tabs[1]:
             st.markdown("<div class='login-title'>Create Account</div>", unsafe_allow_html=True)
