@@ -158,7 +158,8 @@ def load_signin_page():
     if "user" not in st.session_state:
         st.session_state.user = None
 
-    handle_google_callback()  # Check for Google OAuth callback
+    handle_google_callback()
+    st.write("REDIRECT URI =", REDIRECT_URI)# Check for Google OAuth callback
 
     # ---------- CSS ----------
     st.markdown("""
