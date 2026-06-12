@@ -92,4 +92,5 @@ return chunks, chunk_embeddings
 # -------- Answering Queries --------
 
 def answer_query(query: str, chunks, chunk_embeddings) -> str:
-return "HELLO FROM CHATBOT"
+    return "HELLO FROM CHATBOT"
+
