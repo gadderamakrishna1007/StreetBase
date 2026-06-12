@@ -160,7 +160,7 @@ def load_signin_page():
         st.session_state.user = None
 
     handle_google_callback()
-    st.write("REDIRECT URI =", REDIRECT_URI)# Check for Google OAuth callback
+    # Check for Google OAuth callback
 
     # ---------- CSS ----------
     st.markdown("""
@@ -177,8 +177,10 @@ def load_signin_page():
         tabs = st.tabs(["🔐 Login", "🆕 Register"])
 
         # -------- LOGIN TAB --------
+                # -------- LOGIN TAB --------
         with tabs[0]:
             st.markdown("<div class='login-title'>User Login</div>", unsafe_allow_html=True)
+
             email = st.text_input("Email", key="login_email")
             password = st.text_input("Password", type="password", key="login_pass")
 
@@ -188,18 +190,23 @@ def load_signin_page():
                 else:
                     try:
                         user = auth.sign_in_with_email_and_password(email, password)
+
                         st.session_state.logged_in = True
-                        st.session_state.user = {"uid": user["localId"], "email": email}
+                        st.session_state.user = {
+                            "uid": user["localId"],
+                            "email": email
+                        }
+
                         save_token(user["idToken"])
+
                         st.success(f"✅ Logged in successfully! Welcome {email}")
                         st.rerun()
+
                     except Exception as e:
                         st.error(map_firebase_error(str(e)))
 
-            st.markdown("### 🔐 Or login with Google")
-            google_url = build_google_url()
-            st.write("GOOGLE URL =", google_url)
-            st.link_button("Continue with Google", google_url)
+            st.markdown("### 🔐 Google Login")
+            st.info("Google Sign-In temporarily disabled")
         # -------- REGISTER TAB --------
         with tabs[1]:
             st.markdown("<div class='login-title'>Create Account</div>", unsafe_allow_html=True)
