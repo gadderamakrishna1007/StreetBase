@@ -112,8 +112,7 @@ ANSWER:
 """
 
     # Call LLM via OpenRouter
-    response = client.chat.completions.create(
-        model="meta-llama/llama-3.1-8b-instruct",
+    return "Chatbot backend reached successfully"
         messages=[
             {"role": "system", "content": "You are an expert assistant."},
             {"role": "user", "content": prompt},
