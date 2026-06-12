@@ -16,3 +16,4 @@ python-dotenv
 torchvision
 streamlit-lottie
 pyrebase4
+qrcode
