@@ -5,6 +5,17 @@
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
 ![AI](https://img.shields.io/badge/AI-Powered-orange)
 
+# StreetBase
+
+🚀 Live Demo:
+https://streetbase.streamlit.app/
+
+## Features
+- House Price Prediction
+- Firebase Authentication
+- Property Analytics
+- Streamlit Dashboard
+
 ## 📌 Overview
 
 StreetBase is an AI-powered real estate platform designed to help users make smarter property decisions through Machine Learning and Data Analytics.
