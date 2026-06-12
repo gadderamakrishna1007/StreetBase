@@ -9,7 +9,6 @@ load_dotenv()
 
 print("KEY EXISTS:", os.getenv("OPENROUTER_API_KEY") is not None)
 print("KEY STARTS WITH:", os.getenv("OPENROUTER_API_KEY", "")[:10])
-st.write("KEY:", os.getenv("OPENROUTER_API_KEY", "")[:15])
 
 # Disable parallelism warnings
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"   # 👈 add this line
