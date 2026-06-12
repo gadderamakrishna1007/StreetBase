@@ -89,14 +89,17 @@ def load_case_studies_page():
             }
             .detail-box {
                 background-color: #ffffff;
+                color: #111111 !important;
                 border-radius: 16px;
                 box-shadow: 0 4px 14px rgba(0,0,0,0.08);
                 padding: 2em;
                 margin-top: 1.5em;
+}
             }
             .metric {
                 background-color: #f5f8ff;
                 border-left: 5px solid #4B8BFF;
+                color: #111111 !important;
                 padding: 12px 16px;
                 border-radius: 10px;
                 font-size: 0.95rem;
@@ -105,6 +108,7 @@ def load_case_studies_page():
             .impact {
                 background-color: #FFF5E6;
                 border-left: 5px solid #FF6600;
+                color: #111111 !important;
                 padding: 12px 16px;
                 border-radius: 10px;
                 font-size: 0.95rem;
